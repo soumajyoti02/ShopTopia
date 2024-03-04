@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,35 +12,79 @@
     padding: 5px;
     margin-bottom: 10px;
     background-color: #d4a373;
-  }
-  
-  .deals p {
+}
+
+.deals p {
     font-size: 18px;
     color: #333;
-  }
-  
-  .deals h1 {
+}
+
+.deals h1 {
     font-size: 100px;
-    color: #FF5722; /* Adjust the color as needed */
+    color: #FF5722;
+    /* Adjust the color as needed */
     font-weight: bolder;
-  }
-  
-  .deals h4 {
+}
+
+.deals h4 {
     font-size: 24px;
-    color: #009688; /* Adjust the color as needed */
+    color: #009688;
+    /* Adjust the color as needed */
     margin-bottom: 20px;
-    font-weight:bolder;
-  }
-  
-.hero-image{
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 370px;
+    font-weight: bolder;
+}
+
+.crazy_deal_image {
+    display: none;
+}
+
+
+.hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('../Images/banner_hero.jpg');
     background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        background: url('../Images/thanksgiving.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+    }
+
+    .deals h1 {
+        display: none;
+    }
+
+    .deals h4 {
+        display: none;
+    }
+
+    .deals {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .crazy_deal_image {
+        display: block;
+        background-color: #a4b494;
+    }
+
+    .crazy_deal_image img {
+        width: 100vw;
+    }
 }
 
 .product-card {
@@ -50,14 +94,16 @@
     text-align: center;
     width: 250px;
     margin-top: 20px;
-    box-shadow:  11px 11px 22px #c7e4ce,
-    -11px -11px 22px #e5ffec;
+    box-shadow: 11px 11px 22px #c7e4ce,
+        -11px -11px 22px #e5ffec;
 }
-.product-card:hover{
-    transform:scale(1.1);
-    transition:  ease-in-out 0.5s ;
+
+.product-card:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
 
 }
+
 .product-image {
     max-width: 100%;
     border-radius: 8px;
@@ -92,14 +138,14 @@
     background-color: #326707;
 }
 
-.tshirt-item{
+.tshirt-item {
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-h2{
+h2 {
     padding-left: 30px;
     margin-top: 15px;
 }
@@ -110,10 +156,11 @@ h2{
 }
 
 /**Footer**/
-footer{
+footer {
     margin-top: 15px;
 }
-.foot-panel1{
+
+.foot-panel1 {
     background-color: #a4b494;
     color: black;
     height: 50px;
@@ -121,9 +168,10 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 0.85rem;
-    
+
 }
-.foot-panel2{
+
+.foot-panel2 {
     background-color: white;
     color: black;
     height: 300px;
@@ -132,17 +180,19 @@ footer{
     align-self: flex-start;
 }
 
-ul{
+ul {
     margin-top: 20px;
 }
-ul a{
+
+ul a {
     display: block;
     font-size: o.85rem;
     margin-top: 10px;
     color: black;
     align-items: center;
 }
-.social-handle{
+
+.social-handle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,10 +200,12 @@ ul a{
     padding-top: 50px;
     padding-right: 10px;
 }
-.social-icons{
+
+.social-icons {
     height: 40px;
 }
-.foot-panel3{
+
+.foot-panel3 {
     background-color: #a4b494;
     color: black;
     border-top: 0.5px solid white;
@@ -163,24 +215,26 @@ ul a{
     align-items: center;
     margin-top: 5px;
 }
-.web-name{
+
+.web-name {
     color: #432818;
     font-weight: 700;
     font-size: 0.95rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.foot-panel4{
+
+.foot-panel4 {
     background-color: #a4b494;
     text-align: center;
     padding: 6px 0;
     font-size: 0.7rem;
 }
 
-.pages{
+.pages {
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
-.copyright{
+.copyright {
     padding-top: 5px;
 }

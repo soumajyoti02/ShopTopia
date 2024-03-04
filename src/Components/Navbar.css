@@ -1,17 +1,51 @@
-*{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navbar{
+
+.navbar {
     height: 60px;
     background-color: #dfe7d6;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color:black;
+    color: black;
     margin-bottom: 0px;
 }
 
-.nav-logo{
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        column-gap: 17px;
+        row-gap: 10px;
+        padding-bottom: 5px;
+    }
+
+    .panel {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 4px;
+        padding-bottom: 5px;
+
+    }
+
+    .panel-deals {
+        display: none;
+    }
+
+
+
+    .panel-ops p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.nav-logo {
     height: 50px;
     width: 100px;
     display: flex;
@@ -19,7 +53,7 @@
     align-items: center;
 }
 
-.logo-img{
+.logo-img {
 
     background-size: cover;
     height: 30px;
@@ -29,32 +63,37 @@
     align-items: center;
 }
 
-.web-name{
+.web-name {
     color: #432818;
     font-weight: 700;
     font-size: 0.95rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.border{
+
+
+.border {
     border: 2px solid transparent;
 }
-.border:hover{
+
+.border:hover {
     border: 1.5px solid #84a59d;
 }
+
 /*box2*/
-.add-icon{
+.add-icon {
     display: flex;
     align-items: center;
     color: black;
     font-size: 1rem;
 }
-.add-icon svg{
+
+.add-icon svg {
     margin-right: 18px;
 }
 
 /*box3*/
-.nav-search{
+.nav-search {
     display: flex;
     justify-content: space-evenly;
     height: 40px;
@@ -63,10 +102,12 @@
     border-radius: 4px;
     border: 0.5px solid grey;
 }
-.nav-search:hover{
+
+.nav-search:hover {
     border: 2px solid #52796f;
 }
-.search-select{
+
+.search-select {
     background-color: #f3f3f3;
     width: 50px;
     text-align: center;
@@ -75,12 +116,14 @@
     border: none;
     color: #011111;
 }
-.search-input{
+
+.search-input {
     width: 100%;
     font-size: 0.85rem;
     border: none;
 }
-.search-icon{
+
+.search-icon {
     width: 45px;
     display: flex;
     justify-content: center;
@@ -92,42 +135,43 @@
     color: #011111;
 }
 
-.search-icon svg{
+.search-icon svg {
     height: 25px;
     width: 22px;
 }
 
 /*box4*/
-span{
+span {
     font-size: 0.7rem;
 
 }
 
 /*box5*/
 
-.profile-icon{
+.profile-icon {
     height: 28px;
 }
-.navcmn{
+
+.navcmn {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
-.truck-img{
+.truck-img {
     height: 30px;
 }
 
 /*box6*/
-.nav-cart img{
+.nav-cart img {
     height: 28px;
 }
 
-.nav-cart{
+.nav-cart {
     font-size: 0.85rem;
 }
 
-.panel{
-    height: 40px;
+.panel {
+    height: 65px;
     background-color: #a4b494;
     display: flex;
     color: black;
@@ -135,15 +179,28 @@ span{
     justify-content: space-evenly;
 
 }
-.panel-ops p{
+
+.panel-ops p {
     display: inline;
     margin-left: 15px;
 }
-.panel-ops{
+
+.panel-ops {
     width: 70%;
     font-size: 0.85rem;
 }
-.panel-deals{
+
+@media only screen and (max-width: 600px) {
+    .panel-ops {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 20px;
+    }
+}
+
+.panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
 }
