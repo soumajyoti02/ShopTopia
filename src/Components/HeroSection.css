@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles.css (or your preferred CSS file) */
+
+.deals {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #d4a373;
+  }
+  
+  .deals p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .deals h1 {
+    font-size: 100px;
+    color: #FF5722; /* Adjust the color as needed */
+    font-weight: bolder;
+  }
+  
+  .deals h4 {
+    font-size: 24px;
+    color: #009688; /* Adjust the color as needed */
+    margin-bottom: 20px;
+    font-weight:bolder;
+  }
+  
+.hero-image{
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Images/banner_hero.jpg');
+    background-size: cover;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin-top: 20px;
+    box-shadow:  11px 11px 22px #c7e4ce,
+    -11px -11px 22px #e5ffec;
+}
+.product-card:hover{
+    transform:scale(1.1);
+    transition:  ease-in-out 0.5s ;
+
+}
+.product-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 3px;
+}
+
+.product-price {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.add-to-cart-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #66ca3b;
+    font-size: 15px;
+    font-weight: 500px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #326707;
+}
+
+.tshirt-item{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h2{
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+/**Footer**/
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: #a4b494;
+    color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    
+}
+.foot-panel2{
+    background-color: white;
+    color: black;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: flex-start;
+}
+
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: o.85rem;
+    margin-top: 10px;
+    color: black;
+    align-items: center;
+}
+.social-handle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    padding-top: 50px;
+    padding-right: 10px;
+}
+.social-icons{
+    height: 40px;
+}
+.foot-panel3{
+    background-color: #a4b494;
+    color: black;
+    border-top: 0.5px solid white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.web-name{
+    color: #432818;
+    font-weight: 700;
+    font-size: 0.95rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.foot-panel4{
+    background-color: #a4b494;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 0.7rem;
+}
+
+.pages{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.copyright{
+    padding-top: 5px;
+}
